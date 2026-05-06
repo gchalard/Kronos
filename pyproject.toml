@@ -22,3 +22,11 @@ dependencies = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["kronos"]
+
+[project.optional-dependencies]
+examples = [
+    "python-binance",
+    "yfinance",
+    "jupyter",
+    "plotly"
+]
