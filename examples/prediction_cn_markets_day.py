@@ -29,7 +29,7 @@ import akshare as ak
 import matplotlib.pyplot as plt
 import sys
 sys.path.append("../")
-from model import Kronos, KronosTokenizer, KronosPredictor
+from kronos import Kronos, KronosTokenizer, KronosPredictor
 
 save_dir = "./outputs"
 os.makedirs(save_dir, exist_ok=True)

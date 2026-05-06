@@ -23,7 +23,7 @@ warnings.filterwarnings('ignore')
 # 添加项目路径以便导入自定义模块
 sys.path.append("../")
 try:
-    from model import Kronos, KronosTokenizer, KronosPredictor
+    from kronos import Kronos, KronosTokenizer, KronosPredictor
 except ImportError:
     print("⚠️ 无法导入Kronos模型，预测功能将不可用")
 

@@ -7,7 +7,7 @@ import sys
 from tqdm import trange
 
 sys.path.append("../")
-from model.module import *
+from kronos.module import *
 
 
 class KronosTokenizer(nn.Module, PyTorchModelHubMixin):

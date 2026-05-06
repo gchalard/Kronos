@@ -10,7 +10,7 @@ warnings.filterwarnings('ignore')
 
 # 添加项目路径以便导入自定义模块
 sys.path.append("../")
-from model import Kronos, KronosTokenizer, KronosPredictor
+from kronos import Kronos, KronosTokenizer, KronosPredictor
 
 # 设置中文字体
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签

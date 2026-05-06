@@ -105,7 +105,7 @@ Here is a step-by-step guide to making your first forecast.
 First, load a pre-trained Kronos model and its corresponding tokenizer from the Hugging Face Hub.
 
 ```python
-from model import Kronos, KronosTokenizer, KronosPredictor
+from kronos import Kronos, KronosTokenizer, KronosPredictor
 
 # Load from Hugging Face Hub
 tokenizer = KronosTokenizer.from_pretrained("NeoQuasar/Kronos-Tokenizer-base")

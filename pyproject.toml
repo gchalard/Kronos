@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "kronos"
 version = "0.1.0"
@@ -8,10 +12,13 @@ dependencies = [
     "numpy",
     "pandas",
     "torch>=2.0.0",
-    "einops==0.8.1",
-    "huggingface_hub==0.33.1",
-    "matplotlib==3.9.3",
-    "pandas==2.2.2",
-    "tqdm==4.67.1",
-    "safetensors==0.6.2",
+    "einops>=0.8.1",
+    "huggingface_hub>=0.33.1",
+    "matplotlib>=3.9.3",
+    "pandas>=2.2.2",
+    "tqdm>=4.67.1",
+    "safetensors>=0.6.2",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["kronos"]
